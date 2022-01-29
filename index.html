@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Gellary HTML CSS -RD Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>HOW TO MAKE A VIDEO GALLERY</h1>
+       <div class="row">
+           <div class="col">
+              <div class="feature-img">
+               <img src="Images/bb.png" width="100%">
+               <img src="Images/play.png" class="play-btn" onclick="playVideo('Media/vid7.mp4')">
+               </div>
+           </div>
+           <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Images/pic2.png">
+                    <img src="Images/play.png" class="play-btn" onclick="playVideo('Media/vid2.mp4')">
+                </div>
+                <p>How to andd multiple videos in a website or<br>to make a video gallery</p>
+            </div>
+            
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Images/pic3.png">
+                    <img src="Images/play.png" class="play-btn" onclick="playVideo('Media/vid3.mp4')">
+                </div>
+                <p>How to andd multiple videos in a website or<br>to make a video gallery</p>
+            </div>
+            
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Images/pic4.png">
+                    <img src="Images/play.png" class="play-btn" onclick="playVideo('Media/vid4.mp4')">
+                </div>
+                <p>How to andd multiple videos in a website or<br>to make a video gallery</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Images/pic1.jpg">
+                    <img src="Images/play.png" class="play-btn" onclick="playVideo('Media/vid8.mp4')">
+                </div>
+                <p>How to andd multiple videos in a website or<br>to make a video gallery</p>
+            </div>
+            
+            </div>
+       </div>
+   </div>
+   <div class="video-player" id="videoPlayer">
+       <video width="100%" controls autoplay id="myVideo">
+       <source src="Media/vid1.mp4" type="video/mp4">
+       </video>
+       <img src="Images/close.png" class="close-btn" onclick="stopVideo()"> 
+   </div>
+     
+       <script>
+           var videoPlayer = document.getElementById("videoPlayer");
+           var myVideo = document.getElementById("myVideo");
+
+           function stopVideo(){
+               videoPlayer.style.display = "none";
+           }
+
+           function playVideo(file){
+               myVideo.src = file;
+               videoPlayer.style.display = "block";
+           }
+
+           </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
